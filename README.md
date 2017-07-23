@@ -1,5 +1,5 @@
 # vagrant-evpn-vxlan
-Vagrantfile for playing EVPN-VXLAN using gobgp and goplain.
+Vagrantfile for playing EVPN-VXLAN using [gobgp](https://github.com/osrg/gobgp) and [goplane](https://github.com/osrg/goplane).
 
 ## Topology
 
@@ -13,13 +13,13 @@ Vagrantfile for playing EVPN-VXLAN using gobgp and goplain.
 
 ## How to play
 You need to install vagrant before playing vagrant evpn-vxlan.
-This Vagrantfile create two virtual machine.
+This Vagrantfile creates two virtual machine.
 
 ## Common
 
 ```
 git clone https://github.com/skjune12/vagrant-evpn-vxlan
-
+cd vagrant-evpn-vxlan
 vagrant up
 ```
 
@@ -28,7 +28,7 @@ vagrant up
 
 ## Setup gobgp1
 
-### Running goplain
+### Running goplane
 
 ```bash
 vagrant ssh gobgp1
@@ -49,7 +49,7 @@ ip netns exec vxlan ping -c 5 192.168.1.4
 
 ## Setup gobgp2
 
-### Running goplain
+### Running goplane
 
 ```bash
 vagrant ssh gobgp1
