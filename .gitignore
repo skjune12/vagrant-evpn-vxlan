@@ -1,3 +1,5 @@
 .vagrant/
 *.log
 *.pcap
+.DS_Store
+*-measurement/
