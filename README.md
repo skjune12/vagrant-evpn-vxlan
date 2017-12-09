@@ -1,5 +1,5 @@
 # vagrant-evpn-vxlan
-Vagrantfile for playing EVPN-VXLAN using gobgp and goplane.
+Vagrantfile for playing EVPN-VXLAN using [gobgp](https://github.com/osrg/gobgp) and [goplane](https://github.com/osrg/goplane).
 
 ## Topology
 
@@ -20,13 +20,13 @@ this vagrant file creates 3 virtual macines, which are working as PC router, and
 
 ## How to play
 You need to install vagrant before playing vagrant evpn-vxlan.
-This Vagrantfile create two virtual machine.
+This Vagrantfile creates two virtual machine.
 
 ## Common
 
 ```
 git clone https://github.com/skjune12/vagrant-evpn-vxlan
-
+cd vagrant-evpn-vxlan
 vagrant up
 ```
 
