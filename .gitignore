@@ -2,4 +2,6 @@
 *.log
 *.pcap
 .DS_Store
-*-measurement/
+*.txt
+*.tsv
+*.rb
