@@ -37,14 +37,16 @@ vagrant up
 ### Create netns and configure interfaces
 ```
 vagrant ssh gobgp1
-sudo ~/config/config-interface.sh
+sudo -i
+~/config/config-interface.sh
 ```
 
 ### Running goplane
 
 ```bash
 vagrant ssh gobgp1
-sudo goplane -f ~/config/multiple-sites.conf
+sudo -i
+goplane -f ~/config/multiple-sites.conf
 
 ip netns exec vxlan ping -c 5 192.168.1.4
 ```
@@ -54,14 +56,16 @@ ip netns exec vxlan ping -c 5 192.168.1.4
 ### Create netns and configure interfaces
 ```
 vagrant ssh gobgp2
-sudo ~/config/config-interface.sh
+sudo -i
+~/config/config-interface.sh
 ```
 
 ### Running goplane
 
 ```bash
 vagrant ssh gobgp2
-sudo goplane -f ~/config/multiple-sites.conf
+sudo -i
+goplane -f ~/config/multiple-sites.conf
 ```
 
 ## Setup gobgp3
@@ -70,14 +74,16 @@ sudo goplane -f ~/config/multiple-sites.conf
 
 ```
 vagrant ssh gobgp3
-sudo ~/config/config-interface.sh
+sudo -i
+~/config/config-interface.sh
 ```
 
 ### Running goplane
 
 ```bash
 vagrant ssh gobgp3
-sudo goplane -f ~/config/multiple-sites.conf
+sudo -i
+goplane -f ~/config/multiple-sites.conf
 ```
 
 ## Let's play

@@ -2,6 +2,7 @@
 
 # create veth pair and netns
 ip netns add vxlan
+ip addr add dev lo 2.2.2.2/32
 ip link add veth0 type veth peer name veth1
 ip link set veth0 mtu 1450
 ip link set veth1 mtu 1450
